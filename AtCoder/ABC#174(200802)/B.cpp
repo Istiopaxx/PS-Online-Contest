@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+#include <array>
+#include <vector>
+#include <deque>
+#include <list>
+#include <set>
+#include <map>
+#include <stack>
+#include <queue>
+#include <algorithm>
+#include <cstdio>
+#include <cstring>
+#include <utility>
+#include <cstdlib>
+#include <cmath>
+#define INF 987654321
+#define INT_MAX 2147483647
+#define MIN(a, b) ((a) < (b) ? a : b)
+#define MAX(a, b) ((a) > (b) ? a : b)
+ 
+using namespace std;
+ 
+ 
+ 
+int main() {
+    
+    long int N, D;
+ 
+    cin >> N >> D;
+    long int x, y;
+    long int cnt = 0;
+    for(int i = 0; i < N; i++) {
+        cin >> x >> y;
+        if(x*x + y*y <= D*D) cnt++;
+        x = 0; y = 0;
+    }
+    cout << cnt;
+ 
+}
